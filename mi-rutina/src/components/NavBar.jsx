@@ -8,7 +8,7 @@ export const NavBar = () => {
       <Navbar style={{backgroundColor: "#3A4B5C"}} data-bs-theme="dark">
         <Container>
           <div>
-            <img src="public/logo.svg" alt="logo" />
+            <img src="/public/logo.svg" alt="logo" />
           </div>
           <Navbar.Brand >
             <Nav.Link style={{fontFamily: "Holtwood One SC", fontSize: "32px"}} href='#home'>TU RUTINA</Nav.Link>
@@ -18,6 +18,12 @@ export const NavBar = () => {
             <Nav.Link href="#alumnos">ALUMNOS</Nav.Link>
             <Nav.Link href="#perfil">PERFIL</Nav.Link>
             <Nav.Link href="#ayuda">AYUDA</Nav.Link>
+          </Nav>
+          <Nav>
+            <img src="/public/icons/chat-left.svg" alt="chat" />
+          </Nav>
+          <Nav>
+            <Nav.Link href='#cerrarSesion'>Cerrar Sesion</Nav.Link>
           </Nav>
         </Container>  
       </Navbar>
