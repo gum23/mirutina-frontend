@@ -1,19 +1,18 @@
 // import { useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import NavBar from './components/NavBar';
+import {NavBar} from './components/NavBar';
 
 function App() {
 
   return (
-    <>
+    <header>
       <BrowserRouter>
-        <NavBar />
         <Routes>
-          <Route />
+          <Route path='/' element={<NavBar />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </header>
   )
 }
 
